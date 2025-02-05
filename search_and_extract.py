@@ -14,7 +14,7 @@ def search_files(root_path, regex_pattern):
             try:
                 with open(file_path, 'r', encoding='utf-8') as file:
                     content = file.read()
-                    found_matches = re.findall(rf'"valueSet":"(https://[^\"]*{regex_pattern}[^\"]*)"', content)
+                    found_matches = re.findall(rf'"(https://[^\"]*{regex_pattern}[^\"]*)"', content)
                     matches.update(found_matches)
             except UnicodeDecodeError:
                 # Silently skip files that can't be decoded

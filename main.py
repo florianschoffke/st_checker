@@ -23,6 +23,9 @@ def main():
     
     # Check for changes
     run_script('check_for_rc_changes.py')
+    
+    # Get unique Schlüsseltabellen
+    run_script('unique_st.py')
 
     # Delete the temp directory
     shutil.rmtree(temp_dir)
