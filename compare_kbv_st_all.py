@@ -27,8 +27,8 @@ def load_json_file(file_path):
 def compare_json_contents(json1, json2):
     # Compare the JSON contents and return a diff if they differ
     diff = list(unified_diff(
-        json.dumps(json1, indent=4).splitlines(),
-        json.dumps(json2, indent=4).splitlines(),
+        json.dumps(json1, indent=4, sort_keys=True).splitlines(),
+        json.dumps(json2, indent=4, sort_keys=True).splitlines(),
         lineterm=''
     ))
     return diff if diff else None
@@ -41,7 +41,7 @@ def compare_package_contents(dir1, dir2):
     files1 = {}
     files2 = {}
 
-    for filename in os.listdir(dir1):
+    for filename in sorted(os.listdir(dir1)):  # Sort filenames for deterministic order
         if filename.endswith('.json') and filename != 'package.json':
             file_path = os.path.join(dir1, filename)
             json_data = load_json_file(file_path)
@@ -49,7 +49,7 @@ def compare_package_contents(dir1, dir2):
             if name:
                 files1[name] = json_data
 
-    for filename in os.listdir(dir2):
+    for filename in sorted(os.listdir(dir2)):  # Sort filenames for deterministic order
         if filename.endswith('.json') and filename != 'package.json':
             file_path = os.path.join(dir2, filename)
             json_data = load_json_file(file_path)
@@ -58,11 +58,11 @@ def compare_package_contents(dir1, dir2):
                 files2[name] = json_data
 
     # Compare the contents
-    dropped_files = list(files2.keys() - files1.keys())
-    new_files = list(files1.keys() - files2.keys())
+    dropped_files = sorted(list(files2.keys() - files1.keys()))  # Sort for deterministic order
+    new_files = sorted(list(files1.keys() - files2.keys()))      # Sort for deterministic order
     changed_files = []
 
-    for name in files1.keys() & files2.keys():
+    for name in sorted(files1.keys() & files2.keys()):  # Sort for deterministic order
         diff = compare_json_contents(files1[name], files2[name])
         if diff:
             changed_files.append({"name": name, "diff": diff})
