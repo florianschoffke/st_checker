@@ -6,9 +6,15 @@ def load_config(config_file):
     with open(config_file, 'r') as file:
         return json.load(file)
 
+import os
+import re
+
 def search_files(root_path, regex_pattern):
     matches = set()  # Use a set to ensure uniqueness
-    for dirpath, _, filenames in os.walk(root_path):
+    for dirpath, dirnames, filenames in os.walk(root_path):
+        # Skip directories named "examples"
+        dirnames[:] = [d for d in dirnames if d != "examples"]
+        
         for filename in filenames:
             file_path = os.path.join(dirpath, filename)
             try:
@@ -23,6 +29,7 @@ def search_files(root_path, regex_pattern):
                 # Optionally handle other exceptions
                 print(f"An error occurred while processing {file_path}: {e}")
     return list(matches)  # Convert set back to list
+
 
 def main():
     config_file = 'config.json'

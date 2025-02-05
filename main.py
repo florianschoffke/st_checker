@@ -12,6 +12,9 @@ def run_script(script_name):
 
 def main():
     temp_dir = "temp"
+    output_dir = "output"
+    shutil.rmtree(output_dir)
+    
     # First step: Run the search_and_extract script
     run_script('search_and_extract.py') # we have a list of all Schlüsseltabellen relevant for E-Rezept-Fachdienst 
     
