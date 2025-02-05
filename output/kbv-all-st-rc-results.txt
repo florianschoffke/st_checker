@@ -2,28 +2,17 @@
 WARNING: Upcoming changes from kbv.st.all-rc
 ============================================
 
-Config: config_activate_1_1_0
+Config: config_activate_rx_1_1_0
 KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
 
-Config: config_activate_1_2_0
+Config: config_activate_rx_1_2_0
 KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
 
-================================
-WARNING: Changes from kbv.st.all
-================================
+Config: config_activate_diga_1_1_0
+KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
 
-Config: config_activate_1_1_0
+Config: config_dispense_close_1_4_3
+KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
 
-New_files:
-KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS
-
-Changed_files:
-KBV_VS_SFHIR_KBV_PERSONENGRUPPE
-
-Config: config_activate_1_2_0
-
-New_files:
-KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS
-
-Changed_files:
-KBV_VS_SFHIR_KBV_PERSONENGRUPPE
+Config: config_chargeitem_1_0_4
+KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01

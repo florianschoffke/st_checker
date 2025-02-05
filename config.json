@@ -2,15 +2,21 @@
   "package_path": "/Users/gematik/.fhir/packages",
   "st_regex": "_SFHIR_",
   "configs": {
-      "config_activate_1_1_0": [
+      "config_activate_rx_1_1_0": [
           "kbv.ita.erp#1.1.2",
           "kbv.ita.for#1.1.0",
           "kbv.basis#1.3.0",
           "de.basisprofil.r4#1.3.2"
       ],
-      "config_activate_1_2_0": [
+      "config_activate_rx_1_2_0": [
           "kbv.ita.erp#1.2.0-alpha",
           "kbv.basis#1.7.0-alpha2"
+      ],
+      "config_activate_diga_1_1_0": [
+          "kbv.itv.evdga#1.1.0",
+          "kbv.ita.for#1.1.0",
+          "kbv.basis#1.3.0",
+          "de.basisprofil.r4#1.3.2"
       ],
       "config_dispense_close_1_4_3": [
         "de.gematik.erezept-workflow.r4#1.4.3",

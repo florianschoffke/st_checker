@@ -1,25 +1,69 @@
 {
-    "config_activate_1_1_0": [
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_STATUSKENNZEICHEN",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PKV_TARIFF",
+    "config_activate_rx_1_1_0": [
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP",
         "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP"
-    ],
-    "config_activate_1_2_0": [
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP",
         "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_STATUSKENNZEICHEN",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
         "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
         "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PKV_TARIFF",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_STATUSKENNZEICHEN",
         "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS",
-        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP"
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP"
+    ],
+    "config_activate_rx_1_2_0": [
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PKV_TARIFF",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_STATUSKENNZEICHEN",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP"
+    ],
+    "config_activate_diga_1_1_0": [
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PKV_TARIFF",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_STATUSKENNZEICHEN",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP"
+    ],
+    "config_dispense_close_1_4_3": [
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM"
+    ],
+    "config_chargeitem_1_0_4": [
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PKV_TARIFF",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_STATUSKENNZEICHEN",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP"
+    ],
+    "config_chargeitem_1_1_0": [
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ITA_WOP",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_NORMGROESSE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_VERSICHERTENSTATUS",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_PERSONENGRUPPE",
+        "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_KBV_DMP"
     ]
 }
