@@ -13,7 +13,7 @@ def run_script(script_name):
 def main():
     temp_dir = "temp"
     output_dir = "output"
-    shutil.rmtree(output_dir)
+    shutil.rmtree(output_dir, ignore_errors=True)
     
     # First step: Run the search_and_extract script
     run_script('search_and_extract.py') # we have a list of all Schlüsseltabellen relevant for E-Rezept-Fachdienst 
@@ -31,7 +31,7 @@ def main():
     run_script('unique_st.py')
 
     # Delete the temp directory
-    shutil.rmtree(temp_dir)
+    shutil.rmtree(temp_dir, ignore_errors=True)
 
 if __name__ == "__main__":
     main()
