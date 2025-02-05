@@ -4,10 +4,26 @@
   "configs": {
       "config_activate_1_1_0": [
           "kbv.ita.erp#1.1.2",
-          "kbv.ita.for#1.1.0"
+          "kbv.ita.for#1.1.0",
+          "kbv.basis#1.3.0",
+          "de.basisprofil.r4#1.3.2"
       ],
       "config_activate_1_2_0": [
-          "kbv.ita.erp#1.2.0-alpha"
+          "kbv.ita.erp#1.2.0-alpha",
+          "kbv.basis#1.7.0-alpha2"
+      ],
+      "config_dispense_close_1_4_3": [
+        "de.gematik.erezept-workflow.r4#1.4.3",
+        "de.gematik.epa.medication#1.0.3",
+        "de.gematik.fhir.directory#0.11.12"
+      ],
+      "config_chargeitem_1_0_4": [
+        "kbv.ita.for#1.1.0",
+        "kbv.basis#1.3.0",
+        "de.basisprofil.r4#1.3.2"
+      ],
+      "config_chargeitem_1_1_0": [
+        "de.basisprofil.r4#1.5.2"
       ]
   }
 }
