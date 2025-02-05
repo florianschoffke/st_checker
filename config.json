@@ -1,0 +1,13 @@
+{
+  "package_path": "/Users/gematik/.fhir/packages",
+  "st_regex": "_SFHIR_",
+  "configs": {
+      "config_activate_1_1_0": [
+          "kbv.ita.erp#1.1.2",
+          "kbv.ita.for#1.1.0"
+      ],
+      "config_activate_1_2_0": [
+          "kbv.ita.erp#1.2.0-alpha"
+      ]
+  }
+}
