@@ -24,12 +24,16 @@ def check_for_changes(kbv_file, output_file, comparison_file, results_file):
     # Prepare a dictionary to store matches by config
     matches_by_config = defaultdict(list)
 
+    # Collect unique Schlüsseltabellen names
+    schluesseltabellen_to_update = set()
+
     # Check for matches and group them by config
     for config_name, entries in output_data.items():
         for entry in entries:
             for name, details in kbv_details.items():
                 if name in entry:
                     matches_by_config[config_name].append((name, details['version'], details['date']))
+                    schluesseltabellen_to_update.add(name)
                     break  # Exit inner loop after finding a match for this entry
 
     # Prepare results for compare-kbv-st-all.json
@@ -43,12 +47,22 @@ def check_for_changes(kbv_file, output_file, comparison_file, results_file):
             for config_name, entries in output_data.items():
                 if any(file_name in entry for entry in entries):
                     concern_files[config_name][category].append(file_name)
+                    schluesseltabellen_to_update.add(file_name)
 
     # Write results to a text file
     with open(results_file, 'w', encoding='utf-8') as file:
+        # Block for Schlüsseltabellen to update
+        if schluesseltabellen_to_update:
+            header = "Schlüsseltabellen to update"
+            separator = "=" * len(header)
+            file.write(f"{separator}\n{header}\n{separator}\n")
+            for name in sorted(schluesseltabellen_to_update):
+                file.write(name + "\n")
+            file.write("\n")
+
         # Original logic output
         if matches_by_config:
-            warning_message = "WARNING: Upcoming changes from kbv.st.all-rc"
+            warning_message = "WARNING: Upcoming Schlüsseltabellen Changes"
             separator = "=" * len(warning_message)
             print(f"\033[93m{separator}\n{warning_message}\n{separator}\033[0m")
             file.write(f"{separator}\n{warning_message}\n{separator}\n")
@@ -63,7 +77,7 @@ def check_for_changes(kbv_file, output_file, comparison_file, results_file):
 
         # New logic output
         if any(concern_files.values()):
-            comparison_warning = "WARNING: Changes from kbv.st.all"
+            comparison_warning = "WARNING: Concerns from compare-kbv-st-all.json"
             separator = "=" * len(comparison_warning)
             print(f"\033[93m\n{separator}\n{comparison_warning}\n{separator}\033[0m")
             file.write(f"\n{separator}\n{comparison_warning}\n{separator}\n")
