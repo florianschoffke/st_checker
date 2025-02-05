@@ -37,14 +37,15 @@ def main():
     results = {}
 
     for config_name, folders in config['configs'].items():
-        results[config_name] = []
+        unique_matches = set()
         for folder in sorted(folders):  # Sort folders to ensure deterministic order
             folder_path = os.path.join(package_path, folder)
             if os.path.exists(folder_path):
                 matches = search_files(folder_path, regex_pattern)
-                results[config_name].extend(matches)
+                unique_matches.update(matches)
             else:
                 print(f"Folder {folder_path} does not exist.")
+        results[config_name] = sorted(unique_matches)  # Convert set to sorted list
 
     # Write results to a JSON file
     output_file = 'output/output.json'
