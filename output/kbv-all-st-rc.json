@@ -1,9 +1,21 @@
 {
     "contained_files": [
         {
+            "name": "KBV_VS_SFHIR_DTA_ZWEITMEINUNG_OPERATION",
+            "resourceType": "ValueSet",
+            "version": "1.10",
+            "date": "2025-04-01"
+        },
+        {
             "name": "KBV_VS_SFHIR_KBV_DARREICHUNGSFORM",
             "resourceType": "ValueSet",
             "version": "1.15",
+            "date": "2025-04-01"
+        },
+        {
+            "name": "KBV_CS_SFHIR_DTA_ZWEITMEINUNG_OPERATION",
+            "resourceType": "CodeSystem",
+            "version": "1.10",
             "date": "2025-04-01"
         },
         {

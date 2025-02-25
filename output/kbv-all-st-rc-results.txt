@@ -27,3 +27,7 @@ KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
 Config: config_chargeitem_1_0_4
 KBV_CS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
 KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
+
+Config: config_chargeitem_1_1_0
+KBV_CS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
+KBV_VS_SFHIR_KBV_DARREICHUNGSFORM, new Version 1.15, update on 2025-04-01
